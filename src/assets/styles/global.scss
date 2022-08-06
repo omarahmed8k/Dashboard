@@ -1,0 +1,147 @@
+/* ! Defaults */
+
+/* English-Fonts */
+@font-face {
+  font-family: "Blinker-Bold";
+  src: url(../fonts/Blinker-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-Medium";
+  src: url(../fonts/Blinker-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-Regular";
+  src: url(../fonts/Blinker-Regular.ttf);
+}
+/* Arabic-Fonts */
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../fonts/Tajawal-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Tajawal-Medium";
+  src: url(../fonts/Tajawal-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../fonts/Tajawal-Regular.ttf);
+}
+/* Main Values */
+:root {
+  --main-font-bold: "Blinker-Bold", sans-serif;
+  --main-font-medium: "Blinker-Medium", sans-serif;
+  --main-font-regular: "Blinker-Regular", sans-serif;
+  --main-color: #7367f0;
+  --main-text-color: #9b9b9b;
+  --second-text-color: #2e2e2e;
+  --third-text-color: #212121;
+}
+
+[dir="rtl"]:root {
+  --main-font-bold: "Tajawal-Bold", sans-serif;
+  --main-font-medium: "Tajawal-Medium", sans-serif;
+  --main-font-regular: "Tajawal-Regular", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease-in-out;
+}
+
+html {
+  direction: ltr;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f8f8;
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+div,
+button,
+input,
+textarea,
+select,
+label,
+table,
+ul,
+li {
+  font-family: var(--main-font-regular);
+  color: var(--main-text-color);
+}
+
+img {
+  pointer-events: none;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a7a7a7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+.rtl {
+  direction: rtl;
+}
+
+[dir="rtl"] .rtl {
+  direction: ltr;
+}
+
+@media (max-width: 991.99px) {
+  .content {
+    padding: 35px 0px;
+  }
+}
+
+@media (max-width: 767.99px) {
+}
+
+@media (max-width: 575.99px) {
+}

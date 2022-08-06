@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 10px #eee;
+  z-index: 1;
+  ul {
+    gap: 40px;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        svg {
+          color: var(--main-color);
+          font-size: 20px;
+
+          :hover {
+            color: var(--main-text-color);
+          }
+        }
+      }
+    }
+  }
+}

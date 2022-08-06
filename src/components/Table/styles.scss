@@ -1,0 +1,102 @@
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #f3f2f7;
+  box-shadow: 1px 1px 3px #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  table {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f3f2f7;
+
+    thead {
+      tr {
+        th {
+          outline: 1px solid #f3f2f7;
+          background-color: #f3f2f7;
+          padding: 10px;
+          padding-left: 20px;
+          white-space: nowrap;
+          color: var(--second-text-color);
+        }
+      }
+    }
+    tbody {
+      tr {
+        border: 1px solid transparent;
+        outline: 1px solid #f3f2f7;
+        background-color: #fff;
+        cursor: pointer;
+        &:hover {
+          background-color: #f3f2f7;
+          td {
+            outline: 1px solid #f3f2f7;
+          }
+        }
+        td {
+          border: 1px solid transparent;
+          outline: 1px solid #fff;
+          padding: 15px 10px;
+          padding-left: 20px;
+          white-space: nowrap;
+          &.departments {
+            svg {
+              color: var(--main-color);
+            }
+          }
+
+          &.status {
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 75px;
+              height: 25px;
+              border-radius: 5px;
+            }
+          }
+          &.status.Active {
+            span {
+              background-color: #00b3001f;
+              color: #00b300;
+            }
+          }
+          &.status.InActive {
+            span {
+              background-color: #e900001f;
+              color: #e90000;
+            }
+          }
+          &.actions {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 25px;
+              height: 25px;
+              border-radius: 100%;
+              font-size: 12px;
+              &.edit {
+                background-color: #00b3001f;
+                color: #00b300;
+              }
+              &.delete {
+                background-color: #e900001f;
+                color: #e90000;
+              }
+              &:hover {
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

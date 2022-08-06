@@ -1,0 +1,24 @@
+.cards-ul {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  li {
+    width: calc(100% / 4.2);
+  }
+}
+
+.table-ul {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  li {
+    &.table-card {
+      width: calc(100% - 420px);
+    }
+    &.transaction-card {
+      width: 400px;
+    }
+  }
+}
