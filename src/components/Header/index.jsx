@@ -1,7 +1,8 @@
 import { useState } from "react";
-import "./styles.scss";
+import { Link } from "react-router-dom";
 import profile from "../../assets/images/profile.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./styles.scss";
 
 export default function Header() {
   const [openSearch, setOpenSearch] = useState(false);
@@ -10,19 +11,19 @@ export default function Header() {
     <div className="header">
       <ul>
         <li>
-          <a href="#a">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#a">Users</a>
+          <Link to="/">Users</Link>
         </li>
         <li>
-          <a href="#a">Items</a>
+          <Link to="/">Items</Link>
         </li>
         <li>
-          <a href="#a">Reports</a>
+          <Link to="/">Reports</Link>
         </li>
         <li>
-          <a href="#a">Todo</a>
+          <Link to="/">Todo</Link>
         </li>
       </ul>
       <ul>
@@ -40,32 +41,32 @@ export default function Header() {
           </div>
         </li>
         <li>
-          <a href="#a" onClick={() => setOpenDropdown(!openDropdown)}>
+          <Link to="/" onClick={() => setOpenDropdown(!openDropdown)}>
             <FontAwesomeIcon icon="fa-solid fa-bell" />
             <span>5</span>
             <ul className={openDropdown ? "dropdown visible" : "dropdown"}>
               <li>
-                <a href="#a">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#a">Users</a>
+                <Link to="/">Users</Link>
               </li>
               <li>
-                <a href="#a">Items</a>
+                <Link to="/">Items</Link>
               </li>
               <li>
-                <a href="#a">Reports</a>
+                <Link to="/">Reports</Link>
               </li>
               <li>
-                <a href="#a">Todo</a>
+                <Link to="/">Todo</Link>
               </li>
             </ul>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#a">
+          <Link to="/">
             <img src={profile} alt="profile" />
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

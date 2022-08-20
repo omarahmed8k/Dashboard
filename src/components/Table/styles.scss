@@ -1,11 +1,12 @@
 .table-responsive {
+  height: 391px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #f3f2f7;
   box-shadow: 1px 1px 3px #eee;
   border-radius: 5px;
+  border-top-left-radius: 0px;
   margin-bottom: 20px;
-
   table {
     width: 100%;
     border-radius: 5px;

@@ -9,28 +9,28 @@ import TransCard from "../../components/TransCard";
 export default function Home() {
   let cards = [
     {
-      title: "Title",
-      text: "Text",
-      svg: <FontAwesomeIcon icon="user" />,
-      classColor: "card-red",
+      title: "Products",
+      text: "67",
+      svg: <FontAwesomeIcon icon="fa-solid fa-shopping-cart" />,
+      classColor: "card-purple",
     },
     {
-      title: "Title",
-      text: "Text",
-      svg: <FontAwesomeIcon icon="user" />,
+      title: "Transactions",
+      text: "1276",
+      svg: <FontAwesomeIcon icon="fa-solid fa-receipt" />,
       classColor: "card-blue",
     },
     {
-      title: "Title",
-      text: "Text",
-      svg: <FontAwesomeIcon icon="user" />,
-      classColor: "card-green",
+      title: "Finance",
+      text: "10,000 L.E",
+      svg: <FontAwesomeIcon icon="chart-line" />,
+      classColor: "card-red",
     },
     {
-      title: "Title",
-      text: "Text",
-      svg: <FontAwesomeIcon icon="user" />,
-      classColor: "card-purple",
+      title: "Customers",
+      text: "745",
+      svg: <FontAwesomeIcon icon="fa-solid fa-users" />,
+      classColor: "card-green",
     },
   ];
 
@@ -54,9 +54,17 @@ export default function Home() {
       </ul>
       <ul className="table-ul">
         <li className="table-card">
+          <h3 className="title">
+            <FontAwesomeIcon icon="fa-solid fa-users" />
+            Customers
+          </h3>
           <Table />
         </li>
         <li className="transaction-card">
+          <h3 className="title">
+            <FontAwesomeIcon icon="fa-solid fa-receipt" />
+            Transactions
+          </h3>
           <TransCard />
         </li>
       </ul>

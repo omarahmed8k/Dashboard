@@ -2,6 +2,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   li {
     width: calc(100% / 4.2);
@@ -12,6 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   li {
     &.table-card {
@@ -19,6 +21,24 @@
     }
     &.transaction-card {
       width: 400px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-ul {
+    li {
+      width: 100%;
+    }
+  }
+  .table-ul {
+    li {
+      &.table-card {
+        width: 100%;
+      }
+      &.transaction-card {
+        width: 100%;
+      }
     }
   }
 }

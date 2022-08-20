@@ -1,5 +1,6 @@
-import React from "react";
+import * as React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "../src/assets/styles/global.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -10,9 +11,9 @@ import reportWebVitals from "./reportWebVitals";
 library.add(fas, fab, far);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
 
 reportWebVitals();

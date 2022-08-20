@@ -1,4 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ReactComponent as Shirt } from "./../../assets/images/shirt.svg";
+import { ReactComponent as TShirt } from "./../../assets/images/tshirt.svg";
+import { ReactComponent as Jacket } from "./../../assets/images/jacket.svg";
+import { ReactComponent as Shoes } from "./../../assets/images/shoes.svg";
 import "./styles.scss";
 
 export default function TransCard() {
@@ -6,61 +10,112 @@ export default function TransCard() {
     <div className="trans-card">
       <ul className="trans-header">
         <li>
-          <h3>Transactions</h3>
+          <h3>Today</h3>
         </li>
         <li>
-          <FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical" />
+          {/* Date */}
+          <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
         </li>
       </ul>
       {/* Rows */}
-      <ul className="trans-body">
-        <li className="trans-content">
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-wallet" />
-          </span>
-          <div>
-            <h4>Title</h4>
-            <p>Text</p>
-          </div>
-        </li>
-        <li className="trans-price down">-50$</li>
-      </ul>
-      <ul className="trans-body">
-        <li className="trans-content">
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-shield" />
-          </span>
-          <div>
-            <h4>Title</h4>
-            <p>Text</p>
-          </div>
-        </li>
-        <li className="trans-price up">-50$</li>
-      </ul>
-      <ul className="trans-body">
-        <li className="trans-content">
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-key" />
-          </span>
-          <div>
-            <h4>Title</h4>
-            <p>Text</p>
-          </div>
-        </li>
-        <li className="trans-price down">-50$</li>
-      </ul>
-      <ul className="trans-body">
-        <li className="trans-content">
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-file" />
-          </span>
-          <div>
-            <h4>Title</h4>
-            <p>Text</p>
-          </div>
-        </li>
-        <li className="trans-price up">-50$</li>
-      </ul>
+      <div className="trans-container">
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <TShirt />
+            </span>
+            <div>
+              <h4>TShirt - S</h4>
+              <p>1 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+30$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <Shirt />
+            </span>
+            <div>
+              <h4>Shirt - L</h4>
+              <p>5 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+90$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <Jacket />
+            </span>
+            <div>
+              <h4>Jacket - XL</h4>
+              <p>2 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+65$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <Shoes />
+            </span>
+            <div>
+              <h4>Shoes - 45</h4>
+              <p>1 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+120$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <TShirt />
+            </span>
+            <div>
+              <h4>TShirt - S</h4>
+              <p>1 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+30$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <Shirt />
+            </span>
+            <div>
+              <h4>Shirt - L</h4>
+              <p>5 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+90$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <Jacket />
+            </span>
+            <div>
+              <h4>Jacket - XL</h4>
+              <p>2 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+65$</li>
+        </ul>
+        <ul className="trans-body">
+          <li className="trans-content">
+            <span>
+              <Shoes />
+            </span>
+            <div>
+              <h4>Shoes - 45</h4>
+              <p>1 Unit</p>
+            </div>
+          </li>
+          <li className="trans-price up">+120$</li>
+        </ul>
+      </div>
     </div>
   );
 }

@@ -2,14 +2,16 @@
   box-shadow: 1px 1px 3px #eee;
   background-color: #fff;
   border-radius: 5px;
+  border-top-left-radius: 0px;
   width: 100%;
-  padding: 15px 20px;
-  overflow: auto;
+  padding-bottom: 15px;
   .trans-header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    background-color: #f3f2f7;
+    padding: 10px 20px;
     li {
       h3 {
         color: var(--second-text-color);
@@ -21,48 +23,57 @@
       }
     }
   }
-  .trans-body {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    .trans-content {
-      display: flex;
-      align-items: center;
+  .trans-container {
+    height: 315px;
+    overflow: auto;
+    .trans-body {
       flex-direction: row;
-      justify-content: center;
-      gap: 15px;
-      span {
-        width: 45px;
-        height: 45px;
-        background-color: #7367f01f;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding: 0px 20px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      .trans-content {
         display: flex;
         align-items: center;
+        flex-direction: row;
         justify-content: center;
-        border-radius: 5px;
+        gap: 15px;
+        span {
+          width: 45px;
+          height: 45px;
+          background-color: #7367f01f;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
 
-        svg {
-          color: #7367f0;
-          font-size: 18px;
+          svg {
+            color: #7367f0;
+            width: 25px;
+            height: 25px;
+          }
+        }
+        div {
+          h4 {
+            margin-bottom: 5px;
+            color: var(--second-text-color);
+          }
+          p {
+          }
         }
       }
-      div {
-        h4 {
-          margin-bottom: 5px;
-          color: var(--second-text-color);
-        }
-        p {
-        }
-      }
-    }
-    .trans-price {
-      font-family: var(--main-font-medium);
+      .trans-price {
+        font-family: var(--main-font-medium);
 
-      &.down {
-        color: #ea5455;
-      }
-      &.up {
-        color: #28c76f;
+        &.down {
+          color: #ea5455;
+        }
+        &.up {
+          color: #28c76f;
+        }
       }
     }
   }
